@@ -2,7 +2,7 @@
 Creating the gpg keys with using the challenge-response answer of a FIDO2 key, capable of hmac-secret
 The param/challenge which changes the response is: "putThesecretpassForgenerationhere"
 ...you can change that to your own challenge text/pass... eg "myPass" it has to have at least 4 chars.
-## Create GPG keypair
+## Create GPG keypair using a FIDO2 passphrase 
 ~~~
 gpg --batch --generate-key <<<"   %echo Generating a basic OpenPGP key
      Key-Type: DSA
